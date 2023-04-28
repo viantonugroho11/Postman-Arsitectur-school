@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "12603a08-f1b0-4cb8-814e-61bb8d0c9e80",
+		"name": "go-management-auth-school",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "10287450-12603a08-f1b0-4cb8-814e-61bb8d0c9e80"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"id": "a80bd663-6ed5-48c0-8a5e-1f2c9ba3a595",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"viantonugroho\",\n    \"password\":\"1234567\",\n    \"rePassword\":\"1234567\",\n    \"identityId\":\"99\",\n    \"deviceId\":\"777788880\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1324/v1/apiAuth/auth/register",
+							"host": [
+								"localhost"
+							],
+							"port": "1324",
+							"path": [
+								"v1",
+								"apiAuth",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"id": "0febb716-8e62-4083-aa71-fa80a04f9e6d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"viantonugroho\",\n    \"password\":\"1234567\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1324/v1/apiAuth/auth/login",
+							"host": [
+								"localhost"
+							],
+							"port": "1324",
+							"path": [
+								"v1",
+								"apiAuth",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "ac799c13-3da1-497b-a2e0-1b5024f2b16c"
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Student",
+					"item": [
+						{
+							"name": "Get All",
+							"id": "d3774947-be26-4357-a51b-d952556abcab",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:1324/v1/apiUser/student?nis=99",
+									"host": [
+										"localhost"
+									],
+									"port": "1324",
+									"path": [
+										"v1",
+										"apiUser",
+										"student"
+									],
+									"query": [
+										{
+											"key": "nisn",
+											"value": "test",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "nis",
+											"value": "99",
+											"type": "text"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Student",
+							"id": "853bbbfc-6c9c-4c69-909d-c77228cf55f7",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"FirstName\":\"vianto\",\n    \"LastName\":\"nugroho\",\n    \"Email\":\"kepo@gmail.com\",\n    \"Nisn\":\"099999\",\n    \"Nis\":\"99\",\n    \"Nik\":\"09999\",\n    \"PlaceOfBirth\":\"Bekasi\",\n    \"DateOfBirth\":\"2023-04-08\",\n    \"Phone\":\"082333509241\",\n    \"Address\":\"Kayuringin\",\n    \"Gender\":\"male\",\n    \"Religion\":\"Islam\",\n    \"Image\":\"sada\",\n    \"ProvinceID\":31,\n    \"CityID\":12,\n    \"SubdistrictID\":11,\n    \"WardID\":22,\n    \"Rt\":22,\n    \"Rw\":22,\n    \"Height\":22,\n    \"Weight\":22,\n    \"BloodType\":\"22\",\n    \"Disability\":0,\n    \"DisabilityInfo\":\"22\",\n    \"JoinDate\":\"2023-04-08\",\n    \"Details\":\"{}\"\n\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:1324/v1/apiUser/student",
+									"host": [
+										"localhost"
+									],
+									"port": "1324",
+									"path": [
+										"v1",
+										"apiUser",
+										"student"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "76a1849b-9197-4237-88f9-89ec1c48f3ed"
+				},
+				{
+					"name": "New Request",
+					"id": "36eda237-bd7a-4ebb-97b3-e7805fcdfe2e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "d07a0a72-3400-444a-861a-2b6075517824"
+		}
+	]
+}
