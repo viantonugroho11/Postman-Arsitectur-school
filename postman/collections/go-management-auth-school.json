@@ -94,7 +94,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{local}}/v1/apiUser/student/all?nis=99",
+									"raw": "{{local}}/v1/apiUser/student/all",
 									"host": [
 										"{{local}}"
 									],
@@ -113,7 +113,8 @@
 										},
 										{
 											"key": "nis",
-											"value": "99"
+											"value": "99",
+											"disabled": true
 										}
 									]
 								}
@@ -130,7 +131,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{local}}/v1/apiUser/student/99",
+									"raw": "{{local}}/v1/apiUser/student/f4accfb6-d449-440b-bb48-a46d81d86503",
 									"host": [
 										"{{local}}"
 									],
@@ -138,7 +139,7 @@
 										"v1",
 										"apiUser",
 										"student",
-										"99"
+										"f4accfb6-d449-440b-bb48-a46d81d86503"
 									],
 									"query": [
 										{
@@ -200,7 +201,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{local}}/v1/apiUser/parent/all",
+									"raw": "{{local}}/v1/apiUser/parent/all?student_id=99",
 									"host": [
 										"{{local}}"
 									],
@@ -215,6 +216,11 @@
 											"key": "first_name",
 											"value": "vianto",
 											"disabled": true
+										},
+										{
+											"key": "student_id",
+											"value": "99",
+											"type": "text"
 										}
 									]
 								}
@@ -475,15 +481,24 @@
 							"request": {
 								"method": "POST",
 								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"class_id\" : \"1\",\n\t\"teacher_id\" : \"c5de5b37-99b7-47d4-9877-09ca5a1e9ae6\",\n\t\"lesson_id\" : \"c5de5b37-99b7-47d4-9877-09ca5a1e9ae6\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": {
-									"raw": "{{local}}/v1/apiUser/mappingStudent",
+									"raw": "{{local}}/v1/apiUser/mappingCourse",
 									"host": [
 										"{{local}}"
 									],
 									"path": [
 										"v1",
 										"apiUser",
-										"mappingStudent"
+										"mappingCourse"
 									]
 								}
 							},
