@@ -28,11 +28,10 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:1324/v1/apiAuth/auth/register",
+							"raw": "{{local}}/v1/apiAuth/auth/register",
 							"host": [
-								"localhost"
+								"{{local}}"
 							],
-							"port": "1324",
 							"path": [
 								"v1",
 								"apiAuth",
@@ -62,11 +61,10 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:1324/v1/apiAuth/auth/login",
+							"raw": "{{local}}/v1/apiAuth/auth/login",
 							"host": [
-								"localhost"
+								"{{local}}"
 							],
-							"port": "1324",
 							"path": [
 								"v1",
 								"apiAuth",
