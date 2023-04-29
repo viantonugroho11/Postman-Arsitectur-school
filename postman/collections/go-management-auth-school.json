@@ -261,7 +261,64 @@
 				},
 				{
 					"name": "Class",
-					"item": [],
+					"item": [
+						{
+							"name": "Select All Class",
+							"id": "fd9d9f37-a4bc-4d5b-ab0d-ebf79eb4b974",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/v1/apiUser/class/all",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"v1",
+										"apiUser",
+										"class",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Class",
+							"id": "06662a64-73e1-4a26-98de-660a37814d7f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"RPL\",\n    \"major\":1,\n    \"level\":2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/v1/apiUser/class",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"v1",
+										"apiUser",
+										"class"
+									]
+								}
+							},
+							"response": []
+						}
+					],
 					"id": "8be640a2-f91d-4ec5-aa14-db18641e7c90"
 				},
 				{
@@ -296,6 +353,38 @@
 										"apiUser",
 										"lesson",
 										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Lesson",
+							"id": "2bdb8579-f760-4a5d-b45a-04603c6c1375",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Pemrograman Web\",\n    \"type\":\"1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/v1/apiUser/lesson",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"v1",
+										"apiUser",
+										"lesson"
 									]
 								}
 							},
