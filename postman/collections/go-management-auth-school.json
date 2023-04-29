@@ -94,11 +94,10 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "localhost:1324/v1/apiUser/student?nis=99",
+									"raw": "{{local}}/v1/apiUser/student?nis=99",
 									"host": [
-										"localhost"
+										"{{local}}"
 									],
-									"port": "1324",
 									"path": [
 										"v1",
 										"apiUser",
@@ -113,8 +112,7 @@
 										},
 										{
 											"key": "nis",
-											"value": "99",
-											"type": "text"
+											"value": "99"
 										}
 									]
 								}
@@ -140,11 +138,10 @@
 									}
 								},
 								"url": {
-									"raw": "localhost:1324/v1/apiUser/student",
+									"raw": "{{local}}/v1/apiUser/student",
 									"host": [
-										"localhost"
+										"{{local}}"
 									],
-									"port": "1324",
 									"path": [
 										"v1",
 										"apiUser",
@@ -156,6 +153,135 @@
 						}
 					],
 					"id": "76a1849b-9197-4237-88f9-89ec1c48f3ed"
+				},
+				{
+					"name": "Parent",
+					"item": [
+						{
+							"name": "Select All Parent",
+							"id": "1f139951-3fa9-49ab-84eb-b6d7534b6db3",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/v1/apiUser/parent/all",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"v1",
+										"apiUser",
+										"parent",
+										"all"
+									],
+									"query": [
+										{
+											"key": "first_name",
+											"value": "vianto",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Find One Parent",
+							"id": "7dc76a85-4f32-40a8-98bf-906c66e50a55",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/v1/apiUser/parent/one?id",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"v1",
+										"apiUser",
+										"parent",
+										"one"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Parent",
+							"id": "79e70119-267f-4767-b44b-f374c7843915",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"first_name\":\"Andena Putri\", //string `json:\"first_name\"`\n\t\"last_name\":\"Maulida\",\t//string `json:\"last_name\"`\n\t\"type\":\"1\", //string `json:\"type\"`\n\t\"gender\":2, //int    `json:\"gender\"`\n    \"nik\":\"3275\",\n\t\"phone\":\"082333509241\",\t//string `json:\"phone\"`\n\t\"work_id\":1,// int    `json:\"work_id\"`\n\t\"income\":2000,//int    `json:\"income\"`\n\t\"image\":\"wwww\",\t//string `json:\"image\"`\n\t\"student_id\":\"99\"///string `json:\"student_id\"`\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/v1/apiUser/parent",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"v1",
+										"apiUser",
+										"parent"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "4942ba83-97b8-408b-a238-e087efb481dc"
+				},
+				{
+					"name": "Teacher",
+					"item": [],
+					"id": "72b3ee48-6627-41e7-a861-a197be706b8d"
+				},
+				{
+					"name": "Class",
+					"item": [],
+					"id": "8be640a2-f91d-4ec5-aa14-db18641e7c90"
+				},
+				{
+					"name": "Mapping Student",
+					"item": [],
+					"id": "e2a90d13-cd3f-4fad-9e53-0fe3a836faf1"
+				},
+				{
+					"name": "Mapping Course",
+					"item": [],
+					"id": "4b733fed-ccd5-40a7-b84c-cb61d9152c21"
+				},
+				{
+					"name": "Lesson",
+					"item": [],
+					"id": "3a6d1f17-3bd0-4796-9e11-1c9f05405c6c"
+				},
+				{
+					"name": "Major",
+					"item": [],
+					"id": "fbc52300-30ce-4e4b-aa72-aa8674564990"
 				},
 				{
 					"name": "New Request",
