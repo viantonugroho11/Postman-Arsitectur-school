@@ -121,6 +121,38 @@
 							"response": []
 						},
 						{
+							"name": "Select All Student One",
+							"id": "45ddf1d6-f3c9-4b40-912b-fa10316157e1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/v1/apiUser/student/99",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"v1",
+										"apiUser",
+										"student",
+										"99"
+									],
+									"query": [
+										{
+											"key": "nisn",
+											"value": "test",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "Create Student",
 							"id": "853bbbfc-6c9c-4c69-909d-c77228cf55f7",
 							"protocolProfileBehavior": {
@@ -287,6 +319,30 @@
 							"response": []
 						},
 						{
+							"name": "Select All Class One",
+							"id": "05a31f26-67c7-4fd4-8991-463db84666d1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/v1/apiUser/class/1",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"v1",
+										"apiUser",
+										"class",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "Create Class",
 							"id": "06662a64-73e1-4a26-98de-660a37814d7f",
 							"protocolProfileBehavior": {
@@ -323,12 +379,117 @@
 				},
 				{
 					"name": "Mapping Student",
-					"item": [],
+					"item": [
+						{
+							"name": "Select All Map Student & Teacher HR",
+							"id": "741c1c3f-9ba6-494c-af04-ea8c3490750a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/v1/apiUser/mappingStudent/all",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"v1",
+										"apiUser",
+										"mappingStudent",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Map Student",
+							"id": "7192cc41-8526-4fde-9c9e-d4f46cdd497e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\n    \"identity\":\"97\",\n\t\"type\":\"0\",\n\t\"class_id\":\"1\"\n }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/v1/apiUser/mappingStudent",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"v1",
+										"apiUser",
+										"mappingStudent"
+									]
+								}
+							},
+							"response": []
+						}
+					],
 					"id": "e2a90d13-cd3f-4fad-9e53-0fe3a836faf1"
 				},
 				{
 					"name": "Mapping Course",
-					"item": [],
+					"item": [
+						{
+							"name": "Select All Map Course",
+							"id": "f03fac75-98e0-4cd3-8c11-6834b8dd2a78",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/v1/apiUser/mappingCourse/all",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"v1",
+										"apiUser",
+										"mappingCourse",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Mapping Course",
+							"id": "bd2dd959-9b6c-4b8e-bebf-039bd04188d1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/v1/apiUser/mappingStudent",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"v1",
+										"apiUser",
+										"mappingStudent"
+									]
+								}
+							},
+							"response": []
+						}
+					],
 					"id": "4b733fed-ccd5-40a7-b84c-cb61d9152c21"
 				},
 				{
@@ -395,7 +556,64 @@
 				},
 				{
 					"name": "Major",
-					"item": [],
+					"item": [
+						{
+							"name": "Create Major",
+							"id": "fc6b091c-192d-4935-89d7-684953def5f9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Otomotif\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/v1/apiUser/major",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"v1",
+										"apiUser",
+										"major"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Select All Major",
+							"id": "f76ce0c3-9bdb-45cf-88c2-bf5728479d88",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/v1/apiUser/major/all",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"v1",
+										"apiUser",
+										"major",
+										"all"
+									]
+								}
+							},
+							"response": []
+						}
+					],
 					"id": "fbc52300-30ce-4e4b-aa72-aa8674564990"
 				},
 				{
