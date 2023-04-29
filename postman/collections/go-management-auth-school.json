@@ -85,7 +85,7 @@
 					"name": "Student",
 					"item": [
 						{
-							"name": "Get All",
+							"name": "Select All Student",
 							"id": "d3774947-be26-4357-a51b-d952556abcab",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -94,14 +94,15 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{local}}/v1/apiUser/student?nis=99",
+									"raw": "{{local}}/v1/apiUser/student/all?nis=99",
 									"host": [
 										"{{local}}"
 									],
 									"path": [
 										"v1",
 										"apiUser",
-										"student"
+										"student",
+										"all"
 									],
 									"query": [
 										{
@@ -275,7 +276,32 @@
 				},
 				{
 					"name": "Lesson",
-					"item": [],
+					"item": [
+						{
+							"name": "Select All Lesson",
+							"id": "46e3dc60-da21-4605-b288-c3f3d3423cc6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/v1/apiUser/lesson/all",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"v1",
+										"apiUser",
+										"lesson",
+										"all"
+									]
+								}
+							},
+							"response": []
+						}
+					],
 					"id": "3a6d1f17-3bd0-4796-9e11-1c9f05405c6c"
 				},
 				{
