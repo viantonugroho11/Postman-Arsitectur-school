@@ -15,6 +15,7 @@ files[] = {"id":"10287450-12603a08-f1b0-4cb8-814e-61bb8d0c9e80","path":"go-manag
 
 [config.relations.apiDefinition]
 rootDirectory = postman/schemas
+files[] = {"path":"Env.json","metaData":{}}
 files[] = {"path":"index.yaml","metaData":{}}
 
 [config.relations.apiDefinition.metaData]

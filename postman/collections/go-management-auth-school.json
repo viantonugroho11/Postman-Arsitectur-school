@@ -74,6 +74,40 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Validate JWT",
+					"id": "a101eaf5-00ff-4fd5-9ea2-a6830c0e5501",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODI4MjkzNDYsImp0aSI6Ijk5In0.r-B5RGcobLZJnp463ilo8bXnPaV1qjPY9TO3b7dedeA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/v1/apiAuth/auth/validate",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"v1",
+								"apiAuth",
+								"auth",
+								"validate"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "ac799c13-3da1-497b-a2e0-1b5024f2b16c"
@@ -91,6 +125,16 @@
 								"disableBodyPruning": true
 							},
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODI4MDYwMTQsImp0aSI6Ijk5In0.9ryvFa5lnhl0O1F2EN6pKnsyZZQXMT50oOIw5uRrRvY",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
 								"header": [],
 								"url": {
