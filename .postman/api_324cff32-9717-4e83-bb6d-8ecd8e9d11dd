@@ -9,6 +9,7 @@ id = 324cff32-9717-4e83-bb6d-8ecd8e9d11dd
 
 [config.relations.collections]
 rootDirectory = postman/collections
+files[] = {"id":"10287450-63ef8bf2-6c22-4e63-a130-73404515c832","path":"go-assesment-learning-school.json","metaData":{}}
 files[] = {"id":"10287450-12603a08-f1b0-4cb8-814e-61bb8d0c9e80","path":"go-management-auth-school.json","metaData":{}}
 
 [config.relations.collections.metaData]
