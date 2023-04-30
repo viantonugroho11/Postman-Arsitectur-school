@@ -87,7 +87,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODI4MjkzNDYsImp0aSI6Ijk5In0.r-B5RGcobLZJnp463ilo8bXnPaV1qjPY9TO3b7dedeA",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODI4MzUxMjUsImp0aSI6Ijk5In0.wcqmLv46CH_pr267MdnZwsNY4S3kDA2x0SrvF2LOeTo",
 									"type": "string"
 								}
 							]
@@ -130,7 +130,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODI4MDYwMTQsImp0aSI6Ijk5In0.9ryvFa5lnhl0O1F2EN6pKnsyZZQXMT50oOIw5uRrRvY",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODI4MzUxMjUsImp0aSI6Ijk5In0.wcqmLv46CH_pr267MdnZwsNY4S3kDA2x0SrvF2LOeTo",
 											"type": "string"
 										}
 									]
@@ -172,6 +172,16 @@
 								"disableBodyPruning": true
 							},
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODI4MzUxMjUsImp0aSI6Ijk5In0.wcqmLv46CH_pr267MdnZwsNY4S3kDA2x0SrvF2LOeTo",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
 								"header": [],
 								"url": {
