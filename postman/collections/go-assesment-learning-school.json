@@ -2,6 +2,7 @@
 	"info": {
 		"_postman_id": "63ef8bf2-6c22-4e63-a130-73404515c832",
 		"name": "go-assesment-learning-school",
+		"description": "test",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_uid": "10287450-63ef8bf2-6c22-4e63-a130-73404515c832"
 	},
@@ -12,6 +13,40 @@
 				{
 					"name": "Health",
 					"id": "6645eec2-5796-4747-8832-00665fcfafeb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODI4NTUxODUsImp0aSI6Ijk5In0.fHgWPSchG0a1GLwhFXGy3SkkHr72iwNWs4E7ytH4WPc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:1326/v1/apiUser/health",
+							"host": [
+								"localhost"
+							],
+							"port": "1326",
+							"path": [
+								"v1",
+								"apiUser",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Health Copy",
+					"id": "4fe24f57-ad6b-4bb8-93ac-06234cb6591e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
