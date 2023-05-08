@@ -87,7 +87,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODI4MzUxMjUsImp0aSI6Ijk5In0.wcqmLv46CH_pr267MdnZwsNY4S3kDA2x0SrvF2LOeTo",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODI4NDMxOTQsImp0aSI6Ijk5In0.CbAtcrXJ9fRg78ERr-4658tx5npe8p0lyNJpGPv2z-E",
 									"type": "string"
 								}
 							]
@@ -130,7 +130,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODI4MzUxMjUsImp0aSI6Ijk5In0.wcqmLv46CH_pr267MdnZwsNY4S3kDA2x0SrvF2LOeTo",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODM0MjA2OTMsImp0aSI6Ijk5In0.OM5sCfEPYggsj2v31GLjv45FguActtmlYeD7iRqQ--Q",
 											"type": "string"
 										}
 									]
@@ -252,6 +252,16 @@
 								"disableBodyPruning": true
 							},
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODM0MjA2OTMsImp0aSI6Ijk5In0.OM5sCfEPYggsj2v31GLjv45FguActtmlYeD7iRqQ--Q",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
 								"header": [],
 								"url": {
@@ -273,8 +283,7 @@
 										},
 										{
 											"key": "student_id",
-											"value": "99",
-											"type": "text"
+											"value": "99"
 										}
 									]
 								}
@@ -361,6 +370,16 @@
 								"disableBodyPruning": true
 							},
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODI4MzY4NjYsImp0aSI6Ijk5In0.9gjiKSvbBBLFgqh7wke1S6j9TOfKiuZEdNCkiXSAAxc",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
 								"header": [],
 								"url": {

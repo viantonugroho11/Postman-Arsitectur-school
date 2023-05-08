@@ -5,5 +5,152 @@
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_uid": "10287450-63ef8bf2-6c22-4e63-a130-73404515c832"
 	},
-	"item": []
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Health",
+					"id": "6645eec2-5796-4747-8832-00665fcfafeb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODI4NTUxODUsImp0aSI6Ijk5In0.fHgWPSchG0a1GLwhFXGy3SkkHr72iwNWs4E7ytH4WPc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:1326/v1/apiUser/health",
+							"host": [
+								"localhost"
+							],
+							"port": "1326",
+							"path": [
+								"v1",
+								"apiUser",
+								"health"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "284a7903-32e5-47da-98e5-431f0895ee1a"
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Register Copy",
+					"id": "a1035d42-912d-4ebf-8eec-70e62096a113",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"viantonugroho\",\n    \"password\":\"1234567\",\n    \"rePassword\":\"1234567\",\n    \"identityId\":\"99\",\n    \"deviceId\":\"777788880\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/v1/apiAuth/auth/register",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"v1",
+								"apiAuth",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Copy",
+					"id": "cc31bb75-2ff8-4fb9-83d7-f1ac1a900542",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"viantonugroho\",\n    \"password\":\"1234567\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/v1/apiAuth/auth/login",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"v1",
+								"apiAuth",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Validate JWT Copy",
+					"id": "40d42e59-f74e-48b7-a881-e4e7506a0dae",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODI4NTUxODUsImp0aSI6Ijk5In0.fHgWPSchG0a1GLwhFXGy3SkkHr72iwNWs4E7ytH4WPc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/v1/apiAuth/auth/validate",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"v1",
+								"apiAuth",
+								"auth",
+								"validate"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "d908a6a9-184b-4704-9eaf-7a536fa0f055"
+		}
+	]
 }
