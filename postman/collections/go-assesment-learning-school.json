@@ -11,6 +11,150 @@
 			"name": "User",
 			"item": [
 				{
+					"name": "Mapping Weekly Task and Material",
+					"item": [
+						{
+							"name": "Get Mapp All",
+							"id": "6cd43e51-51f2-4855-a0dc-55958f00b321",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:1326/v1/apiUser/mapping-weekly/all",
+									"host": [
+										"localhost"
+									],
+									"port": "1326",
+									"path": [
+										"v1",
+										"apiUser",
+										"mapping-weekly",
+										"all"
+									],
+									"query": [
+										{
+											"key": "mapping_course_id",
+											"value": "12333",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Mapp All Copy",
+							"id": "c76b5ccd-ffd3-4e50-87b2-354bd4292d2c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"mapping_course\":\"12333\",\n    \"week\":5,\n    \"name\":\"test\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:1326/v1/apiUser/mapping-weekly",
+									"host": [
+										"localhost"
+									],
+									"port": "1326",
+									"path": [
+										"v1",
+										"apiUser",
+										"mapping-weekly"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "21f5e9b1-ae76-45d8-83d2-c0e7b76c32a1"
+				},
+				{
+					"name": "Material",
+					"item": [
+						{
+							"name": "Get Mapp All",
+							"id": "757da879-3f1e-4b4d-bf19-c0c88bc7a15f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:1326/v1/apiUser/mapping-weekly/all",
+									"host": [
+										"localhost"
+									],
+									"port": "1326",
+									"path": [
+										"v1",
+										"apiUser",
+										"mapping-weekly",
+										"all"
+									],
+									"query": [
+										{
+											"key": "mapping_course_id",
+											"value": "12333",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Mapp All Copy",
+							"id": "c6d40d27-b3a1-4669-8846-1505d572867a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"test\",\n    \"description\":\"tets\",\n    \"file\":\"12\",\n    \"mapping_weekly_id\":\"380fcf0a-f6a8-48d6-aea7-7be40300df9d\",\n    \"status\":1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:1326/v1/apiUser/material",
+									"host": [
+										"localhost"
+									],
+									"port": "1326",
+									"path": [
+										"v1",
+										"apiUser",
+										"material"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "f3b4a3f2-4a81-4193-8005-f712ea802bd1"
+				},
+				{
 					"name": "Health",
 					"id": "6645eec2-5796-4747-8832-00665fcfafeb",
 					"protocolProfileBehavior": {
@@ -186,6 +330,11 @@
 				}
 			],
 			"id": "d908a6a9-184b-4704-9eaf-7a536fa0f055"
+		},
+		{
+			"name": "Teacher",
+			"item": [],
+			"id": "b67e40e2-5eaa-4ea5-899a-7ad691156e2b"
 		}
 	]
 }
